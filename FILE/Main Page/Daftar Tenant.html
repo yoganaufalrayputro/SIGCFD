@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- Bootstrap Style -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Leaflet Style -->
+    <link rel="stylesheet" href="./Leaflet-1.0.3/leaflet.css"/>
+    <script src="./Leaflet-1.0.3/leaflet.js"></script>
+
+    <style type="text/css">
+      #map {
+        height: 100%;
+      }
+      .carousel-item img {
+        height : 200px;
+      }
+      .jumbotron h1{
+        font-family: initial ;
+      }
+      .jumbotron p{
+
+      }
+    </style>
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+
+    <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-warning text-white">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="logo.png" alt="" width="100" height="24" class="d-inline-block align-text-top ms-4"></a>
+
+      <!-- Ini toggle untuk tombol dropdown navbar responsive -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Ini list navbar -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-4 ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active btn btn-light text-black" aria-current="page" href="#">Pendaftaran Tenant</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profil Usaha</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+  <div class="container">
+    <h1>Pendaftaran Tenant</h1>
+    <br>
+    <label>Pilih Lokasi</label>
+    <img src="">
+    <label>Nama Lengkap Pemilik Usaha (Sesuai KTP)</label>
+    <label>Deskripsi Usaha</label>
+    <label>Unggah Kartu Keluarga</label>
+    <label>Unggah KTP</label>
+    <label>Unggah Foto Banner Usaha</label>
+    <br>
+    <button class="text-center">Simpan</button>
+  </div>
+  <!-- Tempat Leaflet JS Map -->
+  <div id="map">
+    
+  </div>
+  
+  </body>
+  <br>
+  <footer class="text-center">
+    <p>
+      <div class="row">
+        <div class="col text-center">
+          <p>Contact Us : <a href="">Dagangnih </a><a href="">Dagangnih </a><a href="">Dagangnih </a></p>
+        </div>
+        <div class="col text-center">
+          <p>Powered By : Dagangnih [Logo Provinsi]</p>
+        </div>
+      </div>
+    </p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <script>
+
+  // initialize the map
+  var map = L.map('map').setView([42.35, -71.08], 13);
+
+  // load a tile layer
+  L.tileLayer('http://tiles.mapc.org/basemap/{z}/{x}/{y}.png',
+    {
+      attribution: 'Tiles by <a href="http://mapc.org">MAPC</a>, Data by <a href="http://mass.gov/mgis">MassGIS</a>',
+      maxZoom: 17,
+      minZoom: 9
+    }).addTo(map);
+
+  </script>
+</html>
