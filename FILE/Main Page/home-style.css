@@ -80,7 +80,7 @@ mix-blend-mode: screen;
 }
 
 /* fix blank or flashing items on carousel */
-.owl-carousel .item {
+/*.owl-carousel .item {
   position: relative;
   z-index: 100; 
   -webkit-backface-visibility: hidden; 
@@ -103,7 +103,7 @@ mix-blend-mode: screen;
 }
 
 .owl-nav .owl-next {
-  right: -30px;
+  right: -30px;*/
 }
 
 .carousel-item img{

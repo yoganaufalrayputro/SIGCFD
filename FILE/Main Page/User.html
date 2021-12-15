@@ -7,34 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
+    <!-- Font Awesome Style -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
     <!-- Leaflet Style -->
     <link rel="stylesheet" href="./Leaflet-1.0.3/leaflet.css"/>
     <script src="./Leaflet-1.0.3/leaflet.js"></script>
 
-    <style type="text/css">
-      #map {
-        height: 100%;
-      }
-      .carousel-item img {
-        height : 200px;
-      }
-      .jumbotron h1{
-        font-family: initial ;
-      }
-      .jumbotron p{
+    <!-- Local Style -->
+    <link rel="stylesheet" type="text/css" href="home-style.css">
 
-      }
-    </style>
-
-    <title>Hello, world!</title>
+    <title>Selamat Datang! di - Dagangnih!</title>
   </head>
   <body>
 
     <!-- Navbar Start -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-warning text-white">
+  <nav class="navbar navbar-expand-lg text-white">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="logo.png" alt="" width="100" height="24" class="d-inline-block align-text-top ms-4"></a>
+      <a class="navbar-brand" href="#"><i class="fas fa-map-marker-alt"></i>
+        Dagangnih!</a>
 
       <!-- Ini toggle untuk tombol dropdown navbar responsive -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,35 +37,39 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-4 ms-auto">
           <li class="nav-item">
-            <a class="nav-link active btn btn-light text-black" aria-current="page" href="#">Pendaftaran Tenant</a>
+            <a class="nav-link active btn btn-light text-black" aria-current="page" href="#">Beranda</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Profil Usaha</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Daftar/Masuk</a>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
   <!-- Navbar End -->
 
-  <img src="" alt="pattern">
+  <div class="relief">
+    <img src="relief.png" alt="pattern">
+  </div>
+
+  <!-- Wave -->
+  <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 210" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(239.489, 239.489, 239.489, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,168L60,168C120,168,240,168,360,161C480,154,600,140,720,143.5C840,147,960,168,1080,157.5C1200,147,1320,105,1440,84C1560,63,1680,63,1800,66.5C1920,70,2040,77,2160,70C2280,63,2400,42,2520,28C2640,14,2760,7,2880,35C3000,63,3120,126,3240,140C3360,154,3480,119,3600,119C3720,119,3840,154,3960,164.5C4080,175,4200,161,4320,154C4440,147,4560,147,4680,143.5C4800,140,4920,133,5040,119C5160,105,5280,84,5400,84C5520,84,5640,105,5760,94.5C5880,84,6000,42,6120,28C6240,14,6360,28,6480,59.5C6600,91,6720,140,6840,161C6960,182,7080,175,7200,150.5C7320,126,7440,84,7560,70C7680,56,7800,70,7920,91C8040,112,8160,140,8280,154C8400,168,8520,168,8580,168L8640,168L8640,210L8580,210C8520,210,8400,210,8280,210C8160,210,8040,210,7920,210C7800,210,7680,210,7560,210C7440,210,7320,210,7200,210C7080,210,6960,210,6840,210C6720,210,6600,210,6480,210C6360,210,6240,210,6120,210C6000,210,5880,210,5760,210C5640,210,5520,210,5400,210C5280,210,5160,210,5040,210C4920,210,4800,210,4680,210C4560,210,4440,210,4320,210C4200,210,4080,210,3960,210C3840,210,3720,210,3600,210C3480,210,3360,210,3240,210C3120,210,3000,210,2880,210C2760,210,2640,210,2520,210C2400,210,2280,210,2160,210C2040,210,1920,210,1800,210C1680,210,1560,210,1440,210C1320,210,1200,210,1080,210C960,210,840,210,720,210C600,210,480,210,360,210C240,210,120,210,60,210L0,210Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(230.382, 230.382, 230.382, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,21L60,42C120,63,240,105,360,108.5C480,112,600,77,720,59.5C840,42,960,42,1080,49C1200,56,1320,70,1440,66.5C1560,63,1680,42,1800,59.5C1920,77,2040,133,2160,136.5C2280,140,2400,91,2520,70C2640,49,2760,56,2880,66.5C3000,77,3120,91,3240,105C3360,119,3480,133,3600,133C3720,133,3840,119,3960,105C4080,91,4200,77,4320,66.5C4440,56,4560,49,4680,66.5C4800,84,4920,126,5040,126C5160,126,5280,84,5400,59.5C5520,35,5640,28,5760,21C5880,14,6000,7,6120,10.5C6240,14,6360,28,6480,49C6600,70,6720,98,6840,112C6960,126,7080,126,7200,122.5C7320,119,7440,112,7560,94.5C7680,77,7800,49,7920,35C8040,21,8160,21,8280,38.5C8400,56,8520,91,8580,108.5L8640,126L8640,210L8580,210C8520,210,8400,210,8280,210C8160,210,8040,210,7920,210C7800,210,7680,210,7560,210C7440,210,7320,210,7200,210C7080,210,6960,210,6840,210C6720,210,6600,210,6480,210C6360,210,6240,210,6120,210C6000,210,5880,210,5760,210C5640,210,5520,210,5400,210C5280,210,5160,210,5040,210C4920,210,4800,210,4680,210C4560,210,4440,210,4320,210C4200,210,4080,210,3960,210C3840,210,3720,210,3600,210C3480,210,3360,210,3240,210C3120,210,3000,210,2880,210C2760,210,2640,210,2520,210C2400,210,2280,210,2160,210C2040,210,1920,210,1800,210C1680,210,1560,210,1440,210C1320,210,1200,210,1080,210C960,210,840,210,720,210C600,210,480,210,360,210C240,210,120,210,60,210L0,210Z"></path><defs><linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 100px); opacity:0.8" fill="url(#sw-gradient-2)" d="M0,168L60,154C120,140,240,112,360,94.5C480,77,600,70,720,80.5C840,91,960,119,1080,112C1200,105,1320,63,1440,49C1560,35,1680,49,1800,63C1920,77,2040,91,2160,87.5C2280,84,2400,63,2520,52.5C2640,42,2760,42,2880,59.5C3000,77,3120,112,3240,122.5C3360,133,3480,119,3600,101.5C3720,84,3840,63,3960,56C4080,49,4200,56,4320,56C4440,56,4560,49,4680,38.5C4800,28,4920,14,5040,24.5C5160,35,5280,70,5400,70C5520,70,5640,35,5760,45.5C5880,56,6000,112,6120,115.5C6240,119,6360,70,6480,73.5C6600,77,6720,133,6840,147C6960,161,7080,133,7200,133C7320,133,7440,161,7560,175C7680,189,7800,189,7920,189C8040,189,8160,189,8280,182C8400,175,8520,161,8580,154L8640,147L8640,210L8580,210C8520,210,8400,210,8280,210C8160,210,8040,210,7920,210C7800,210,7680,210,7560,210C7440,210,7320,210,7200,210C7080,210,6960,210,6840,210C6720,210,6600,210,6480,210C6360,210,6240,210,6120,210C6000,210,5880,210,5760,210C5640,210,5520,210,5400,210C5280,210,5160,210,5040,210C4920,210,4800,210,4680,210C4560,210,4440,210,4320,210C4200,210,4080,210,3960,210C3840,210,3720,210,3600,210C3480,210,3360,210,3240,210C3120,210,3000,210,2880,210C2760,210,2640,210,2520,210C2400,210,2280,210,2160,210C2040,210,1920,210,1800,210C1680,210,1560,210,1440,210C1320,210,1200,210,1080,210C960,210,840,210,720,210C600,210,480,210,360,210C240,210,120,210,60,210L0,210Z"></path></svg>
 
   <!-- Jumbotron 1 Start -->
-  <div class="jumbotron jumbotron-fluid mt-4 mb-4">
-    <div class="container">
-      <div class="row align-items-start">
-        <div class="col ms-4 text-center">
-          <img src="logo.jpg" style="height: 200px;">
-        </div>
-        <div class="col ms-auto">
-          <h1 class="display-4">Cari Tempat Dagang?</h1>
-            <p class="lead font-monospace">Halo Juragan!</p>
-            <p>Perkenankan kami untuk membantu agan mencari lapak yang oke untuk jualan, mulai dari ketersediaan lokasi, ukuran lahan, sampai harga sewanya</p>
-            <p class="lead">
-              <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-            </p>
-        </div>
+  <div class="row bg-white">
+  </div>
+  <div class="row bg-white">
+    <div class="col ms-4 text-center">
+        <img src="pic2.png">
       </div>
-    </div>    
+      <div class="col my-auto align-start">
+        <h1>Pendaftaran Tenant</h1>
+        <p>Halo Juragan!</p>
+        <p>Sekarang Anda dapat mendaftarkan usaha Anda untuk mendapatkan lapak yang cocok!</p>
+      </div>
   </div>
   <!-- Jumbotron 1 End -->
 
@@ -83,17 +79,19 @@
     <div class="container">
       <div class="row">
         <div class="col ms-4">
-          <h1 class="display-4">Fluid jumbotron</h1>
+          <h1 class="display-4 my-auto">Pilih Lokasi Usahamu</h1>
             <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
         </div>
         <div class="col text-center">
-          <img src="logo.jpg" style="height: 200px;">
+          <img src="pic1.png" style="height: 200px;">
         </div>
       </div>
     </div>
   </div>
   <!-- Jumbotron 2 End -->
 
+  <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 290" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(221.275, 221.275, 221.275, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,87L30,101.5C60,116,120,145,180,149.8C240,155,300,135,360,120.8C420,106,480,97,540,96.7C600,97,660,106,720,116C780,126,840,135,900,140.2C960,145,1020,145,1080,154.7C1140,164,1200,184,1260,164.3C1320,145,1380,87,1440,82.2C1500,77,1560,126,1620,140.2C1680,155,1740,135,1800,140.2C1860,145,1920,174,1980,154.7C2040,135,2100,68,2160,77.3C2220,87,2280,174,2340,217.5C2400,261,2460,261,2520,227.2C2580,193,2640,126,2700,106.3C2760,87,2820,116,2880,145C2940,174,3000,203,3060,188.5C3120,174,3180,116,3240,96.7C3300,77,3360,97,3420,125.7C3480,155,3540,193,3600,188.5C3660,184,3720,135,3780,106.3C3840,77,3900,68,3960,62.8C4020,58,4080,58,4140,58C4200,58,4260,58,4290,58L4320,58L4320,290L4290,290C4260,290,4200,290,4140,290C4080,290,4020,290,3960,290C3900,290,3840,290,3780,290C3720,290,3660,290,3600,290C3540,290,3480,290,3420,290C3360,290,3300,290,3240,290C3180,290,3120,290,3060,290C3000,290,2940,290,2880,290C2820,290,2760,290,2700,290C2640,290,2580,290,2520,290C2460,290,2400,290,2340,290C2280,290,2220,290,2160,290C2100,290,2040,290,1980,290C1920,290,1860,290,1800,290C1740,290,1680,290,1620,290C1560,290,1500,290,1440,290C1380,290,1320,290,1260,290C1200,290,1140,290,1080,290C1020,290,960,290,900,290C840,290,780,290,720,290C660,290,600,290,540,290C480,290,420,290,360,290C300,290,240,290,180,290C120,290,60,290,30,290L0,290Z"></path></svg>
+  
   <!-- Tempat Leaflet JS Map -->
   <div id="map">
     
