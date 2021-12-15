@@ -1,0 +1,111 @@
+body{
+  background: linear-gradient(108.78deg, #FEAA1A 32.43%, #FFC82A 93.77%);
+  height: 29px;
+  width: 100%;
+}
+
+.navbar li {
+  display: inline;
+  float: left;
+
+}
+
+#logo {
+  width: 181px;
+  height: 46px;
+  left: 56px;
+  top: 25px;
+}
+
+#navs {
+  position: absolute;
+  width: 423px;
+  height: 36px;
+  left: 894px;
+  top: 30px;
+  padding-right: 50px;
+}
+
+/* Daftar */
+
+position: absolute;
+  width: 99px;
+  height: 29px;
+  left: 1132px;
+  top: 32px;
+
+  font-family: Cabin;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #F1F1F1;
+  
+
+
+.navbar{
+position: absolute;
+width: 99px;
+height: 29px;
+left: 1132px;
+top: 32px;
+
+font-family: Cabin;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 29px;
+
+color: #F1F1F1;
+
+
+}
+
+.relief{
+position: absolute;
+width: 1743px;
+height: 134px;
+left: 10px;
+top: 77px;
+
+mix-blend-mode: screen;
+}
+
+.carousel-wrap {
+  margin: 90px auto;
+  padding: 0 5%;
+  width: 80%;
+  position: relative;
+}
+
+/* fix blank or flashing items on carousel */
+.owl-carousel .item {
+  position: relative;
+  z-index: 100; 
+  -webkit-backface-visibility: hidden; 
+}
+
+/* end fix */
+.owl-nav > div {
+  margin-top: -26px;
+  position: absolute;
+  top: 50%;
+  color: #cdcbcd;
+}
+
+.owl-nav i {
+  font-size: 52px;
+}
+
+.owl-nav .owl-prev {
+  left: -30px;
+}
+
+.owl-nav .owl-next {
+  right: -30px;
+}
+
+.carousel-item img{
+  border-radius: 50%;
+}
