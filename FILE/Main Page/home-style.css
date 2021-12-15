@@ -87,25 +87,11 @@ mix-blend-mode: screen;
 }
 
 /* end fix */
-.owl-nav > div {
-  margin-top: -26px;
-  position: absolute;
-  top: 50%;
-  color: #cdcbcd;
-}
-
-.owl-nav i {
-  font-size: 52px;
-}
-
-.owl-nav .owl-prev {
-  left: -30px;
-}
-
-.owl-nav .owl-next {
-  right: -30px;*/
-}
 
 .carousel-item img{
   border-radius: 50%;
+}
+
+.form-khusus label {
+  font-size: 16px;
 }
