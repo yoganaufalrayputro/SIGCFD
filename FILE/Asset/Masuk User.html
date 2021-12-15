@@ -1,46 +1,50 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<title>Login/title>
-</head>
-<body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<div class="row">
-		<div class="col">
-			<img src="">
-		</div>
-		<div class="col">
-			<h2>Masuk</h2>
-			<br><br>
-			<div class="row">
-				<div class="col">
-					<button>Google</button>
-				</div>
-				<div class="col">
-					<button>Facebook</button>
-				</div>
-			</div>
-			<h3>Atau</h3>
-			<br><br>
-			<p>Email</p>
-			<p>Password</p>
-			<br>
-			<button class="text-center">Masuk</button>
-			<br><br>
-			<p>Belum Punya Akun? <a href="">Daftar</a></p>
-		</div>
-	</div>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-</body>
+    <!-- Local Style -->
+    <link rel="stylesheet" type="text/css" href="modal.css">
 
-<footer>
-	<p>
-		@Copyright Reserved
-	</p>
-</footer>
+    <title>Login</title>
+  </head>
+  <body>
 
+    <div class="container">
+      <div class="row">
 
+        <!-- Bagian Gambar-->
+        <div class="col" id="bagian-gambar">
+          <img src="Log.png">
+        </div>
+
+        <!-- Bagian Form -->
+        <div class="col" id="bagian-form">
+          <h1 class="text-center">Masuk</h1>
+          <div class="row">
+          	<div class="col text-center">
+          		<button id="google">dengan Google</button>
+          	</div>
+          	<div class="col text-center">
+          		<button id="facebook">dengan Facebook</button>
+      		</div>
+          </div>
+          <p id="atau">ATAU</p>
+          <input type="password" placeholder="Email" name="mail" required id="email">
+          <input type="password" placeholder="Password" name="psw" required id="pasw">
+          <button id="enter">Daftar</button>
+          <p id="redir">Belum punya akun? <a href="">Daftar</a></p>
+        </div>
+      </div>
+      
+    </div>
+  </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
 </html>
