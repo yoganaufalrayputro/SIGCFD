@@ -11,30 +11,27 @@
     <link rel="stylesheet" href="./Leaflet-1.0.3/leaflet.css"/>
     <script src="./Leaflet-1.0.3/leaflet.js"></script>
 
-    <style type="text/css">
-      #map {
-        height: 100%;
-      }
-      .carousel-item img {
-        height : 200px;
-      }
-      .jumbotron h1{
-        font-family: initial ;
-      }
-      .jumbotron p{
+    <!-- Font Awesome Style -->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
 
+    <style type="text/css">
+      body{
+        background: linear-gradient(108.78deg, #FEAA1A 32.43%, #FFC82A 93.77%);
+        height: 29px;
+        width: 100%;
       }
     </style>
 
-    <title>Hello, world!</title>
+    <title>Halaman Admin</title>
   </head>
   <body>
 
-    <!-- Navbar Start -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-warning text-white">
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg text-white">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="logo.png" alt="" width="100" height="24" class="d-inline-block align-text-top ms-4"></a>
+      <a class="navbar-brand" href="#"><i class="fas fa-map-marker-alt"></i>
+        Dagangnih!</a>
 
       <!-- Ini toggle untuk tombol dropdown navbar responsive -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,72 +42,66 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav me-4 ms-auto">
           <li class="nav-item">
-            <a class="nav-link active btn btn-light text-black" aria-current="page" href="#">Keluar</a>
+            <a class="nav-link active btn btn-light text-black me-4" aria-current="page" href="#">Keluar</a>
           </li>
+        </ul>
       </div>
     </div>
   </nav>
-  <!-- Navbar End -->
+  <!-- Navbar Ends -->
 
+  <!-- Wave 1 -->
+  <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 220" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(187.123, 182.331, 171.739, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,44L80,66C160,88,320,132,480,132C640,132,800,88,960,66C1120,44,1280,44,1440,36.7C1600,29,1760,15,1920,40.3C2080,66,2240,132,2400,135.7C2560,139,2720,81,2880,77C3040,73,3200,125,3360,143C3520,161,3680,147,3840,132C4000,117,4160,103,4320,113.7C4480,125,4640,161,4800,154C4960,147,5120,95,5280,88C5440,81,5600,117,5760,139.3C5920,161,6080,169,6240,168.7C6400,169,6560,161,6720,150.3C6880,139,7040,125,7200,102.7C7360,81,7520,51,7680,47.7C7840,44,8000,66,8160,66C8320,66,8480,44,8640,62.3C8800,81,8960,139,9120,135.7C9280,132,9440,66,9600,33C9760,0,9920,0,10080,11C10240,22,10400,44,10560,73.3C10720,103,10880,139,11040,154C11200,169,11360,161,11440,157.7L11520,154L11520,220L11440,220C11360,220,11200,220,11040,220C10880,220,10720,220,10560,220C10400,220,10240,220,10080,220C9920,220,9760,220,9600,220C9440,220,9280,220,9120,220C8960,220,8800,220,8640,220C8480,220,8320,220,8160,220C8000,220,7840,220,7680,220C7520,220,7360,220,7200,220C7040,220,6880,220,6720,220C6560,220,6400,220,6240,220C6080,220,5920,220,5760,220C5600,220,5440,220,5280,220C5120,220,4960,220,4800,220C4640,220,4480,220,4320,220C4160,220,4000,220,3840,220C3680,220,3520,220,3360,220C3200,220,3040,220,2880,220C2720,220,2560,220,2400,220C2240,220,2080,220,1920,220C1760,220,1600,220,1440,220C1280,220,1120,220,960,220C800,220,640,220,480,220C320,220,160,220,80,220L0,220Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(248.597, 248.597, 248.597, 1)" offset="0%"></stop><stop stop-color="rgba(182.57, 178.858, 170.652, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,132L80,135.7C160,139,320,147,480,132C640,117,800,81,960,55C1120,29,1280,15,1440,14.7C1600,15,1760,29,1920,44C2080,59,2240,73,2400,73.3C2560,73,2720,59,2880,44C3040,29,3200,15,3360,14.7C3520,15,3680,29,3840,55C4000,81,4160,117,4320,139.3C4480,161,4640,169,4800,168.7C4960,169,5120,161,5280,154C5440,147,5600,139,5760,146.7C5920,154,6080,176,6240,176C6400,176,6560,154,6720,135.7C6880,117,7040,103,7200,113.7C7360,125,7520,161,7680,179.7C7840,198,8000,198,8160,183.3C8320,169,8480,139,8640,124.7C8800,110,8960,110,9120,110C9280,110,9440,110,9600,113.7C9760,117,9920,125,10080,117.3C10240,110,10400,88,10560,95.3C10720,103,10880,139,11040,157.7C11200,176,11360,176,11440,176L11520,176L11520,220L11440,220C11360,220,11200,220,11040,220C10880,220,10720,220,10560,220C10400,220,10240,220,10080,220C9920,220,9760,220,9600,220C9440,220,9280,220,9120,220C8960,220,8800,220,8640,220C8480,220,8320,220,8160,220C8000,220,7840,220,7680,220C7520,220,7360,220,7200,220C7040,220,6880,220,6720,220C6560,220,6400,220,6240,220C6080,220,5920,220,5760,220C5600,220,5440,220,5280,220C5120,220,4960,220,4800,220C4640,220,4480,220,4320,220C4160,220,4000,220,3840,220C3680,220,3520,220,3360,220C3200,220,3040,220,2880,220C2720,220,2560,220,2400,220C2240,220,2080,220,1920,220C1760,220,1600,220,1440,220C1280,220,1120,220,960,220C800,220,640,220,480,220C320,220,160,220,80,220L0,220Z"></path><defs><linearGradient id="sw-gradient-2" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 100px); opacity:0.8" fill="url(#sw-gradient-2)" d="M0,132L80,128.3C160,125,320,117,480,99C640,81,800,51,960,47.7C1120,44,1280,66,1440,95.3C1600,125,1760,161,1920,154C2080,147,2240,95,2400,95.3C2560,95,2720,147,2880,168.7C3040,191,3200,183,3360,154C3520,125,3680,73,3840,66C4000,59,4160,95,4320,121C4480,147,4640,161,4800,139.3C4960,117,5120,59,5280,55C5440,51,5600,103,5760,102.7C5920,103,6080,51,6240,33C6400,15,6560,29,6720,29.3C6880,29,7040,15,7200,40.3C7360,66,7520,132,7680,132C7840,132,8000,66,8160,55C8320,44,8480,88,8640,117.3C8800,147,8960,161,9120,157.7C9280,154,9440,132,9600,121C9760,110,9920,110,10080,106.3C10240,103,10400,95,10560,110C10720,125,10880,161,11040,154C11200,147,11360,95,11440,69.7L11520,44L11520,220L11440,220C11360,220,11200,220,11040,220C10880,220,10720,220,10560,220C10400,220,10240,220,10080,220C9920,220,9760,220,9600,220C9440,220,9280,220,9120,220C8960,220,8800,220,8640,220C8480,220,8320,220,8160,220C8000,220,7840,220,7680,220C7520,220,7360,220,7200,220C7040,220,6880,220,6720,220C6560,220,6400,220,6240,220C6080,220,5920,220,5760,220C5600,220,5440,220,5280,220C5120,220,4960,220,4800,220C4640,220,4480,220,4320,220C4160,220,4000,220,3840,220C3680,220,3520,220,3360,220C3200,220,3040,220,2880,220C2720,220,2560,220,2400,220C2240,220,2080,220,1920,220C1760,220,1600,220,1440,220C1280,220,1120,220,960,220C800,220,640,220,480,220C320,220,160,220,80,220L0,220Z"></path></svg>
+
+  <!-- Row Starts -->
   <!-- Jumbotron start -->
-  <div class="jumbotron text-center">
-    <h1 class="display-4">Hello, world!</h1>
-    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-    <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-  </div>
+  <div class="row bg-white">
+    <div class="jumbotron text-center">
+      <h1 class="display-4">Selamat Datang di Dagangnih!</h1>
+      <p class="lead">Berikan yang terbaik untuk mereka yang bekerja keras.</p>
+    </div>
   <!-- Jumbotron Ends -->
 
-  <!-- Tabs Start -->
-  <ul class="nav nav-tabs">
-    <li class="nav-item">
-      <a class="nav-link" href="#">Tampilan Usaha (Carousel)</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Lokasi</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link active" href="#">Daftar Akun</a>
-    </li>
-  </ul>
-  <!-- Tabs Ends -->
+    <!-- Tabs Start -->
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link" href="Dashboard.html">Tampilan Usaha (Carousel)</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Lokasi.html">Lokasi</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Daftar Akun</a>
+      </li>
+    </ul>
+    <!-- Tabs Ends -->
 
-  <!-- Tables start -->
-  <table class="table table-bordered">
-    <thead>
-      <tr>
-        <th scope="col">No.</th>
-        <th scope="col">Nama Lengkap</th>
-        <th scope="col">Email</th>
-        <th scope="col">Password</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>Mark</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>Mark</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>Mark</td>
-      </tr>
-    </tbody>
-  </table>
-  <!-- Table Ends -->
+    <!-- Tables start -->
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th scope="col">No.</th>
+          <th scope="col">Nama Lengkap</th>
+          <th scope="col">Email</th>
+          <th scope="col">Password</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Totok</td>
+          <td>totok@totok.com</td>
+          <td>totokmintaduit</td>
+        </tr>
+      </tbody>
+    </table>
+    <!-- Table Ends -->
 
+  </div>
+  <!-- Row Ends -->
 
   </body>
-  <br>
+
   <footer class="text-center">
     <p>
       <div class="row">
