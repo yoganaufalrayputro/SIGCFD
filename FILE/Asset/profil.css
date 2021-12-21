@@ -1,0 +1,26 @@
+.container {
+	position: relative;
+	width: 640px;
+	height: 528px;
+
+	background: #F1F1F1;
+	box-shadow: 7px 3px 8px rgba(0, 0, 0, 0.25);
+	border-radius: 18px;
+}
+
+#kotak {
+	position: relative;
+	width: 546px;
+	height: 380px;
+	left: 44px;
+	top: 74px;
+}
+
+.container a {
+	position: absolute;
+	width: 12px;
+	height: 21px;
+	left: 605px;
+	top: 20px;
+
+}
